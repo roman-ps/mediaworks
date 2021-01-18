@@ -25,50 +25,54 @@
       </symbol>
     </svg>
 
-    <header class="header">
-      <div class="header__top">
-        <a class="header__logo">Логотип
-          <img src="img/logo.svg" alt="Логотип" width="147" height="32">
-        </a>
-        <nav class="header__nav">
-          <a class="header__link" href="#">Клиентам</a>
-          <button class="header__login" type="button">Войти
-            <svg class="icon__account icon">
-              <use  xmlns="http://www.w3.org/2000/svg" xlink:href="#account"></use>
-            </svg>
-          </button>
-        </nav>
+    <div class="main-container">
+      <div class="wrapper">
+        <header class="header">
+          <a class="header__logo">Логотип
+            <img src="img/logo.svg" alt="Логотип" width="147" height="32">
+          </a>
+          <nav class="header__nav">
+            <a class="header__link" href="#">Клиентам</a>
+            <a class="header__login" href="#">Войти
+              <svg class="icon__account icon">
+                <use  xmlns="http://www.w3.org/2000/svg" xlink:href="#account"></use>
+              </svg>
+            </a>
+          </nav>
+        </header>
+        <section class="promo">
+          <h1 class="promo__title">Подбор авто в лизинг по выгодной цене</h1>
+          <p class="promo__subtitle">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+          <button class="promo__btn btn" type="button">Регистрация</button>
+        </section>
       </div>
-      <div class="header__bottom">
-        <h1 class="header__title">Подбор авто в лизинг по выгодной цене</h1>
-        <p class="header__subtitle">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
-        <button class="header__btn btn" type="button">Регистрация</button>
-      </div>
-    </header>
+    </div>
 
     <section class="capabilities">
-      <h2 class="capabilities__title">Меньше условий &ndash; больше возможностей</h2>
-      <ul class="capabilities__list">
-        <li class="capabilities__item capabilities__item--first">
-          <h4 class="capabilities__item-title">Экономия времени</h4>
-          <p class="capabilities__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на&nbsp;рекламу и маркетинг.</p>
-        </li>
+      <div class="wrapper">
+        <h2 class="capabilities__title">Меньше условий &ndash; больше возможностей</h2>
+        <ul class="capabilities__list">
+          <li class="capabilities__item capabilities__item--first">
+            <h4 class="capabilities__item-title">Экономия времени</h4>
+            <p class="capabilities__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на&nbsp;рекламу и маркетинг.</p>
+          </li>
 
-        <li class="capabilities__item capabilities__item--second">
-          <h4 class="capabilities__item-title">Никаких задержек</h4>
-          <p class="capabilities__item-description">Вы получаете запросы сразу же после&nbsp;отправки клиентом.</p>
-        </li>
+          <li class="capabilities__item capabilities__item--second">
+            <h4 class="capabilities__item-title">Никаких задержек</h4>
+            <p class="capabilities__item-description">Вы получаете запросы сразу же после&nbsp;отправки клиентом.</p>
+          </li>
 
-        <li class="capabilities__item capabilities__item--third">
-          <h4 class="capabilities__item-title">Максимальная информативность</h4>
-          <p class="capabilities__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные запросы клиента.</p>
-        </li>
+          <li class="capabilities__item capabilities__item--third">
+            <h4 class="capabilities__item-title">Максимальная информативность</h4>
+            <p class="capabilities__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные запросы клиента.</p>
+          </li>
 
-        <li class="capabilities__item capabilities__item--fourth">
-          <h4 class="capabilities__item-title">Удобство общения</h4>
-          <p class="capabilities__item-description">Для каждого запроса у вас открыт чат&nbsp;с клиентом с возможностью отправки документов.</p>
-        </li>
-      </ul>
+          <li class="capabilities__item capabilities__item--fourth">
+            <h4 class="capabilities__item-title">Удобство общения</h4>
+            <p class="capabilities__item-description">Для каждого запроса у вас открыт чат&nbsp;с клиентом с возможностью отправки документов.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="registration">

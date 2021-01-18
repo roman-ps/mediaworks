@@ -3,6 +3,25 @@ body {
   position: relative;
 }
 
+.main-container {
+  position: relative;
+  background: $gradient;
+  background-image: $gradient;
+
+  .wrapper {
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right -25px bottom 101px;
+    background-size: 689px 442px;
+  }
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -28,4 +47,28 @@ body {
   position: absolute;
   left: 0;
   fill: #ffffff;
+}
+
+@media #{$tablet} {
+
+  .main-container {
+
+    .wrapper {
+      background-image: url("../img/header-bg-tablet.png");
+      background-position: right -25px bottom 50px;
+      background-size: 518px 333px;
+    }
+  }
+}
+
+@media #{$mobile} {
+
+  .main-container {
+
+    .wrapper {
+      background-image: url("../img/header-bg-mobile.png");
+      background-position: center bottom 10px;
+      background-size: 345px 222px;
+    }
+  }
 }
