@@ -1,9 +1,28 @@
 @font-face {
-  font-family: "";
+  font-family: "Whitney";
   font-weight: 400;
   font-style: normal;
-  src: local(""),
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+  src: local("Whitney-Book"), url("../fonts/Whitney-Book.woff2") format("woff2"),
+    url("../fonts/Whitney-Book.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Whitney-Light"),
+    url("../fonts/Whitney-Light.woff2") format("woff2"),
+    url("../fonts/Whitney-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Whitney";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Whitney-Semibold"),
+    url("../fonts/Whitney-Semibold.woff2") format("woff2"),
+    url("../fonts/Whitney-Semibold.woff") format("woff");
   font-display: swap;
 }

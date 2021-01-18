@@ -1,3 +1,83 @@
 .header {
-  
+  position: relative;
+  background: $gradient;
+  padding: 0 calc(50% - 585px) 180px;
+  background-image: url("../img/header-bg.png"), $gradient;
+  background-repeat: no-repeat;
+  background-position: right 29.5% bottom 101px, center;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 98px;
+}
+
+.header__logo {
+  font-size: 0;
+}
+
+.header__nav {
+  margin-right: 6px;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__login {
+  position: relative;
+  margin-left: 99px;
+  padding-left: 36px;
+  font-family: $font-whitney;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 1;
+
+    .icon-account {
+      fill: #49c0f0;
+    }
+  }
+}
+
+.header__bottom {
+  max-width: 515px;
+  margin-top: 100px;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #ffffff;
+  margin-top: 30px;
+  letter-spacing: 0.005em;
+}
+
+.header__btn {
+  margin-top: 35px;
 }

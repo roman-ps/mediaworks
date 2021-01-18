@@ -1,0 +1,30 @@
+.form {
+  font-family: $font-whitney;
+}
+
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+
+.form__input {
+  font-family: $font-whitney;
+  padding: 17px 12px;
+  box-sizing: border-box;
+  border: 1px solid #DDDAE7;
+  border-radius: 4px;
+}
+
+.form__btn {
+  width: 100%;
+  margin-top: 34px;
+}
+
+.form__label {
+  padding: 10px 0;
+}

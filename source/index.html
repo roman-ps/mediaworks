@@ -2,12 +2,101 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="preload" href="fonts/.woff" as="font">
+    <title>Тестовое задание от Media Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/Whitney-Book.woff2" as="font">
+    <link rel="preload" href="fonts/Whitney-Light.woff2" as="font">
+    <link rel="preload" href="fonts/Whitney-Semibold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <svg style="display:none">
+      <symbol id="account" viewBox="0 0 24 24">
+        <g clip-path="url(#clip0)">
+        <path d="M24.0002 12C24.0002 5.36774 18.6332 0 12.0002 0C5.36798 0 0.000244141 5.367 0.000244141 12C0.000244141 18.5735 5.32239 24 12.0002 24C18.6506 24 24.0002 18.6037 24.0002 12ZM12.0002 1.40625C17.8417 1.40625 22.594 6.15857 22.594 12C22.594 14.1368 21.9584 16.1907 20.7798 17.9304C16.0469 12.8394 7.96222 12.8302 3.2207 17.9304C2.04205 16.1907 1.40649 14.1368 1.40649 12C1.40649 6.15857 6.15881 1.40625 12.0002 1.40625ZM4.09778 19.0547C8.30591 14.3346 15.6957 14.3357 19.9025 19.0547C15.6803 23.7784 8.32184 23.7799 4.09778 19.0547Z" fill=""/>
+        <path d="M12.0002 12.7031C14.3264 12.7031 16.219 10.8105 16.219 8.48438V7.07812C16.219 4.75195 14.3264 2.85938 12.0002 2.85938C9.67407 2.85938 7.78149 4.75195 7.78149 7.07812V8.48438C7.78149 10.8105 9.67407 12.7031 12.0002 12.7031ZM9.18774 7.07812C9.18774 5.52722 10.4493 4.26562 12.0002 4.26562C13.5511 4.26562 14.8127 5.52722 14.8127 7.07812V8.48438C14.8127 10.0353 13.5511 11.2969 12.0002 11.2969C10.4493 11.2969 9.18774 10.0353 9.18774 8.48438V7.07812Z" fill=""/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="24" height="24" fill="" transform="translate(0.000244141)"/>
+        </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo">Логотип
+          <img src="img/logo.svg" alt="Логотип" width="147" height="32">
+        </a>
+        <nav class="header__nav">
+          <a class="header__link" href="#">Клиентам</a>
+          <button class="header__login" type="button">Войти
+            <svg class="icon__account icon">
+              <use  xmlns="http://www.w3.org/2000/svg" xlink:href="#account"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="header__bottom">
+        <h1 class="header__title">Подбор авто в лизинг по выгодной цене</h1>
+        <p class="header__subtitle">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+        <button class="header__btn btn" type="button">Регистрация</button>
+      </div>
+    </header>
+
+    <section class="capabilities">
+      <h2 class="capabilities__title">Меньше условий &ndash; больше возможностей</h2>
+      <ul class="capabilities__list">
+        <li class="capabilities__item capabilities__item--first">
+          <h4 class="capabilities__item-title">Экономия времени</h4>
+          <p class="capabilities__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на&nbsp;рекламу и маркетинг.</p>
+        </li>
+
+        <li class="capabilities__item capabilities__item--second">
+          <h4 class="capabilities__item-title">Никаких задержек</h4>
+          <p class="capabilities__item-description">Вы получаете запросы сразу же после&nbsp;отправки клиентом.</p>
+        </li>
+
+        <li class="capabilities__item capabilities__item--third">
+          <h4 class="capabilities__item-title">Максимальная информативность</h4>
+          <p class="capabilities__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные запросы клиента.</p>
+        </li>
+
+        <li class="capabilities__item capabilities__item--fourth">
+          <h4 class="capabilities__item-title">Удобство общения</h4>
+          <p class="capabilities__item-description">Для каждого запроса у вас открыт чат&nbsp;с клиентом с возможностью отправки документов.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="registration">
+      <div class="registration__container">
+        <p class="registration__description">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+        <button class="registration__btn btn" type="button">Регистрация</button>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <div class="modal__container">
+        <button class="modal__close" type="button">Закрыть модальное окно</button>
+        <h3 class="modal__title">Авторизация</h3>
+        <form class="modal__form form" action="" method="POST">
+          <div class="form__input-container">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          </div>
+
+          <div class="form__input-container">
+            <label class="form__label" for="password">E-mail</label>
+            <input class="form__input form__input--password" type="password" id="password" name="password" placeholder="Введите пароль" required>
+          </div>
+          <button class="form__btn btn" type="button">Войти</button>
+        </form>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

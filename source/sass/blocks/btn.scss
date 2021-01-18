@@ -1,0 +1,21 @@
+.btn {
+  font-family: $font-whitney;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  background-color: #f25b24;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  width: 222px;
+  padding: 16px 10px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 2px 1px #cccccc;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

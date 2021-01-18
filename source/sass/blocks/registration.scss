@@ -1,0 +1,33 @@
+.registration {
+  max-width: 1170px;
+  margin: 100px auto 0;
+  // padding: 0 calc(50% - 585px);
+  background-image: url("../img/registration-bg.png"), $gradient;
+  background-repeat: no-repeat;
+  background-position: right center, center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.registration__container {
+  // @include pseudo;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  padding: 70px 0 70px 70px;
+  // z-index: 1;
+}
+
+.registration__description {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 45px;
+  max-width: 557px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.registration__btn {
+  margin-top: 46px;
+}

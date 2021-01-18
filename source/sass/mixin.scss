@@ -1,5 +1,11 @@
 @mixin pseudo {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
+}
+
+@mixin pseudo-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
 }

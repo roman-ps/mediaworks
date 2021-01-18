@@ -1,0 +1,54 @@
+.modal {
+  width: 490px;
+  position: fixed;
+  @include pseudo-center;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+
+.modal__container {
+  padding: 60px 60px 55px 60px;
+}
+
+.modal__close {
+  @include pseudo;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  font-size: 0;
+  border: 0;
+  top: 24px;
+  right: 24px;
+  outline: 0;
+  cursor: pointer;
+
+  &::before {
+    @include pseudo;
+    width: 2px;
+    height: 14px;
+    background: #000000;
+    top: 0;
+    right: 8px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    @include pseudo;
+    width: 2px;
+    height: 14px;
+    background: #000000;
+    top: 0;
+    right: 8px;
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__title {
+  font-family: $font-whitney;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  margin: 0;
+}
