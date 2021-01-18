@@ -32,16 +32,16 @@
   font-family: $font-segoe;
 
   &--first {
-    background-image: url("../../img/item1.png");
+    background-image: url("../img/item1.png");
   }
   &--second {
-    background-image: url("../../img/item2.png");
+    background-image: url("../img/item2.png");
   }
   &--third {
-    background-image: url("../../img/item3.png");
+    background-image: url("../img/item3.png");
   }
   &--fourth {
-    background-image: url("../../img/item4.png");
+    background-image: url("../img/item4.png");
   }
 }
 
@@ -61,7 +61,6 @@
 }
 
 @media #{$tablet} {
-
   .capabilities {
     margin-top: 50px;
   }
@@ -78,16 +77,16 @@
     background-position: right 10px bottom 10px;
 
     &--first {
-      background-image: url("../../img/item1-tablet.png");
+      background-image: url("../img/item1-tablet.png");
     }
     &--second {
-      background-image: url("../../img/item2-tablet.png");
+      background-image: url("../img/item2-tablet.png");
     }
     &--third {
-      background-image: url("../../img/item3-tablet.png");
+      background-image: url("../img/item3-tablet.png");
     }
     &--fourth {
-      background-image: url("../../img/item4-tablet.png");
+      background-image: url("../img/item4-tablet.png");
     }
   }
 
@@ -103,7 +102,6 @@
 }
 
 @media #{$mobile} {
-
   .capabilities {
     margin-top: 50px;
   }
@@ -133,6 +131,4 @@
     line-height: 18px;
     margin-top: 10px;
   }
-
-
 }

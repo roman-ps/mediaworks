@@ -50,9 +50,7 @@ body {
 }
 
 @media #{$tablet} {
-
   .main-container {
-
     .wrapper {
       background-image: url("../img/header-bg-tablet.png");
       background-position: right -25px bottom 50px;
@@ -62,9 +60,7 @@ body {
 }
 
 @media #{$mobile} {
-
   .main-container {
-
     .wrapper {
       background-image: url("../img/header-bg-mobile.png");
       background-position: center bottom 10px;
