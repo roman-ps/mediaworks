@@ -28,3 +28,13 @@
 .form__label {
   padding: 10px 0;
 }
+
+@media #{$mobile} {
+
+  .form__input-container {
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+}

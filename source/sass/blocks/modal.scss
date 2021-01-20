@@ -14,12 +14,12 @@
 
 .modal__close {
   @include pseudo;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   font-size: 0;
   border: 0;
-  top: 24px;
+  top: 20px;
   right: 24px;
   outline: 0;
   cursor: pointer;
@@ -27,7 +27,7 @@
   &::before {
     @include pseudo;
     width: 2px;
-    height: 14px;
+    height: 20px;
     background: #000000;
     top: 0;
     right: 8px;
@@ -36,7 +36,7 @@
   &::after {
     @include pseudo;
     width: 2px;
-    height: 14px;
+    height: 20px;
     background: #000000;
     top: 0;
     right: 8px;
@@ -51,4 +51,47 @@
   line-height: 52px;
   text-align: center;
   margin: 0;
+}
+
+@media #{$tablet} {
+
+  .modal {
+    width: 420px;
+  }
+
+  .modal__container {
+    padding: 40px 40px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media #{$mobile} {
+
+  .modal {
+    width: 320px;
+    border-radius: 0;
+  }
+
+  .modal__container {
+    padding: 45px 30px 30px;
+  }
+
+  .modal__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .modal__close {
+    top: 12px;
+    right: 12px;
+  }
 }
