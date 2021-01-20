@@ -41,19 +41,29 @@ gulp.task("server", function () {
 // Сборка проекта
 
 gulp.task("css", function () {
-  return gulp.src("source/css/style.min.css").pipe(gulp.dest("build/css"));
+  return gulp.src("source/css/style.min.css")
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("html", function () {
-  return gulp.src("source/*.html").pipe(gulp.dest("build"));
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
 });
 
+gulp.task('img', function() {
+  return gulp.src('source/img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/img'));
+})
+
 gulp.task("fonts", function () {
-  return gulp.src("source/fonts/*").pipe(gulp.dest("build/fonts"));
+  return gulp.src("source/fonts/*")
+    .pipe(gulp.dest("build/fonts"));
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/main.js").pipe(gulp.dest("build/js"));
+  return gulp.src("source/js/main.js")
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
@@ -65,5 +75,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "html", "css", "js", "fonts")); // запуск всех задач сборки
+gulp.task("build", gulp.series("clean", "html", "css", "img", "js", "fonts")); // запуск всех задач сборки
 gulp.task("watch", gulp.series("server")); // отслеживание изменения в файлах и перезагрузка
